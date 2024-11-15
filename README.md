@@ -1,46 +1,32 @@
 # Pixel Art
 
-Um aplicativo interativo para desenhar pixel a pixel em uma grade personalizável. Refatorado usando React para uma interface mais dinâmica e organizada.
+O **Pixels Art** é um editor de arte em pixels baseado na web, permitindo que os usuários criem suas próprias obras de arte pixeladas. Utiliza **React** e **TypeScript** para criar uma interface interativa e eficiente.
 
 ## 🚀 Tecnologias Utilizadas
-- **React**: Estrutura de componentes e gerenciamento de estado.
-- **CSS**: Estilização da interface.
-- **Local Storage**: Persistência de dados.
+- **React**: Biblioteca JavaScript para construção de interfaces de usuário.
+- **TypeScript**: Adiciona tipagem estática ao projeto, permitindo a identificação de erros em tempo de compilação, melhorando a legibilidade e a manutenção do código, além de oferecer suporte aprimorado para ferramentas de desenvolvimento e IDEs.
 
-## ✨ Funcionalidades
-- Paleta de cores personalizável com geração de cores aleatórias.
-- Grade de pixels ajustável entre 5x5 e 50x50.
-- Persistência de desenhos e configurações no navegador.
-- Limpeza rápida da grade.
+## Instalação
 
-## 🖥️ Como Executar
-
-### Clone o repositório
-git clone https://github.com/SEU_USUARIO/pixel-art-react.git
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/lucazgbrl/Pixels-Art.git
 
 ### Entre no diretório do projeto
-cd pixel-art-react
+cd Pixels-Art
 
 ### Instale as dependências
 npm install
-
+ 
 ### Inicie o projeto
 npm start
 
-## Estrutura do Projeto
-src/
-├── components/
-│   ├── ColorPalette.js
-│   ├── PixelBoard.js
-│   ├── ControlPanel.js
-├── App.js
-├── index.js
-└── styles.css
+## Como usar
 
-## Próximos Passos  
-- Implementar opções de exportar o desenho como imagem.
-- Adicionar uma ferramenta de "borrão" e preenchimento completo.
-- Melhorar a interface com animações.
+1. Crie seu board ajustando o tamanho no input.
+2. Escolha a paleta de cores e pinte os pixels clicando sobre eles.
+3. Para gerar uma nova paleta, clique no botão **New Palette**.
+4. Para limpar o board, clique em **Clear Board**.
 
 ---
 
