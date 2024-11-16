@@ -38,22 +38,18 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
+  font-family: 'Press Start 2P', cursive;
   margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-image: url('../public/8bit\ landscape.jpg'); /* Substitua pelo caminho da sua imagem */
-  background-size: cover; /* Faz a imagem cobrir toda a página */
-  background-repeat: no-repeat; /* Evita repetição da imagem */
-  background-attachment: fixed; /* Fixa a imagem ao fundo mesmo com rolagem */
-  background-position: center; /* Centraliza a imagem */
+  background: url('../public/8bit\ landscape.jpg') no-repeat center center fixed;
+  background-size: cover;
 }
 
 .container {
-  background-color: white;
+  background-color: rgba(0, 0, 0, 0.1);
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -61,17 +57,20 @@ body {
 }
 
 button {
-  background-color: #007bff;
-  color: white;
-  border: none;
+  font-family: 'Press Start 2P', cursive;
+  background-color: #444;
+  color: #fff;
+  border: 3px solid #fff;
   padding: 10px 20px;
-  border-radius: 4px;
   cursor: pointer;
-  margin: 10px 5px;
+  margin: 10px;
+  text-shadow: 0 2px #000;
+  border-radius: 4px;
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: #666;
+  border-color: #fff;
 }
 
 input {
@@ -80,5 +79,12 @@ input {
   border-radius: 4px;
   margin-bottom: 15px;
   width: 150px;
+}
+
+.board, #palette-section {
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
 }
 

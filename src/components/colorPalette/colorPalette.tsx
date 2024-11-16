@@ -19,8 +19,8 @@ const ColorPalette = ({ onColorSelect }: { onColorSelect: (color: string) => voi
   };
 
   return (
-    <section>
-      <h2>Paleta de Cores</h2>
+    <section id="palette-section">
+      <h2>Cores</h2>
       <ul id="color-palette">
         {colors.map((color, index) => (
           <li

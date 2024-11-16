@@ -36,7 +36,9 @@ const Board = ({ selectedColor }: { selectedColor: string }) => {
 
   return (
     <section>
-      <BoardTitle />
+      {boardSize > 0 && (
+        <BoardTitle />
+      )}
       <form>
         <label htmlFor="board-size">Tamanho do Quadro:</label>
         <input
@@ -49,7 +51,6 @@ const Board = ({ selectedColor }: { selectedColor: string }) => {
         />
         <button id='generate-board' onClick={handleStartArt}>Começar Arte</button>
       </form>
-      <button id='clear-board' onClick={resetBoard}>Limpar Quadro</button>
       <div
         className='board'
         id='pixel-board'
@@ -68,6 +69,9 @@ const Board = ({ selectedColor }: { selectedColor: string }) => {
           />
         ))}
       </div>
+      {boardSize > 0 && (
+          <button id='clear-board' onClick={resetBoard}>Limpar Quadro</button>
+      )}
     </section>
   );
 };
