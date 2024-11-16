@@ -1,10 +1,11 @@
 # Pixel Art
 
-O **Pixels Art** é um editor de arte em pixels baseado na web, permitindo que os usuários criem suas próprias obras de arte pixeladas. Utiliza **React** e **TypeScript** para criar uma interface interativa e eficiente.
+O projeto **Pixels Art** permite que os usuários desenhem suas próprias obras de arte usando um quadro de pixels personalizável. Com uma paleta de cores interativa, você pode pintar os pixels com diferentes cores e até mesmo gerar um quadro com tamanho variável de 5 a 50.
 
 ## 🚀 Tecnologias Utilizadas
-- **React**: Biblioteca JavaScript para construção de interfaces de usuário.
-- **TypeScript**: Adiciona tipagem estática ao projeto, permitindo a identificação de erros em tempo de compilação, melhorando a legibilidade e a manutenção do código, além de oferecer suporte aprimorado para ferramentas de desenvolvimento e IDEs.
+- React
+- TypeScript
+- CSS
 
 ## Instalação
 
@@ -21,12 +22,12 @@ npm install
 ### Inicie o projeto
 npm start
 
-## Como usar
+## Como Usar
 
-1. Crie seu board ajustando o tamanho no input.
-2. Escolha a paleta de cores e pinte os pixels clicando sobre eles.
-3. Para gerar uma nova paleta, clique no botão **New Palette**.
-4. Para limpar o board, clique em **Clear Board**.
+1. Selecione uma cor da paleta de cores.
+2. Escolha o tamanho do quadro ajustando o valor no campo de entrada.
+3. Clique nos pixels para pintar de acordo com a cor selecionada.
+4. Use o botão "Limpar Quadro" para resetar o quadro, retornando todos os pixels para a cor branca.
 
 ---
 
