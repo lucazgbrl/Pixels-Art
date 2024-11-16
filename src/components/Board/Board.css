@@ -1,17 +1,17 @@
+.pixel {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #ddd;
+  display: inline-block;
+  box-sizing: border-box;
+}
+
 .board {
-    gap: 1px;
-  }
-  
-  .pixel {
-    width: 40px;
-    height: 40px;
-    background-color: white;
-    border: 1px solid #ccc;
-    cursor: pointer;
-    transition: background-color 0.2s ease;
-  }
-  
-  .pixel:hover {
-    background-color: lightgray;
-  }
-  
+  margin: 10px auto;
+  display: grid;
+  gap: 1px;
+  justify-content: center;
+  background-color: #ccc;
+  padding: 5px;
+  border-radius: 5px;
+}

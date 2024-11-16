@@ -11,7 +11,7 @@ function App() {
       setSelectedColor(color);  // Atualiza a cor selecionada
     };
   return (
-    <main>
+    <main className='container'>
       <Header />
       <ColorPalette onColorSelect={handleColorSelect} />
       <Board selectedColor={selectedColor} />

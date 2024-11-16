@@ -51,6 +51,7 @@ const Board = ({ selectedColor }: { selectedColor: string }) => {
       </form>
       <button id='clear-board' onClick={resetBoard}>Limpar Quadro</button>
       <div
+        className='board'
         id='pixel-board'
         style={{
           display: 'grid',
