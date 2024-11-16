@@ -19,19 +19,20 @@ const ColorPalette = ({ onColorSelect }: { onColorSelect: (color: string) => voi
   };
 
   return (
-    <div>
-      <button className="palette-button" onClick={changePaletteColors}>Mudar Paleta</button>
-      <div id="color-palette">
+    <section>
+      <h2>Paleta de Cores</h2>
+      <ul id="color-palette">
         {colors.map((color, index) => (
-          <div
+          <li
             key={index}
             className="color"
             style={{ backgroundColor: color }}
             onClick={() => handleColorSelect(color)}
           />
         ))}
-      </div>
-    </div>
+      </ul>
+      <button id="button-random-color" aria-label="Gerar nova paleta de cores" onClick={changePaletteColors}>Nova Paleta</button>
+    </section>
   );
 };
 

@@ -19,7 +19,8 @@ const Board = ({ selectedColor }: { selectedColor: string }) => {
     }
   };
 
-  const handleStartArt = () => {
+  const handleStartArt = (e: React.MouseEvent<HTMLButtonElement>) => {
+    e.preventDefault();
     setBoardSize(inputValue); // Define o novo tamanho do quadro
   };
 
@@ -34,20 +35,23 @@ const Board = ({ selectedColor }: { selectedColor: string }) => {
   };
 
   return (
-    <div>
-        <BoardTitle />
-      <input
-        type="number"
-        value={inputValue}
-        onChange={handleInputChange}
-        min="5"
-        max="50"
-        placeholder="Tamanho do quadro"
-      />
-      <button onClick={handleStartArt}>Começar Arte</button>
-      <button onClick={resetBoard}>Limpar Quadro</button>
+    <section>
+      <BoardTitle />
+      <form>
+        <label htmlFor="board-size">Tamanho do Quadro:</label>
+        <input
+          id="board-size"
+          type="number"
+          value={inputValue}
+          onChange={handleInputChange}
+          min="5"
+          max="50"
+        />
+        <button id='generate-board' onClick={handleStartArt}>Começar Arte</button>
+      </form>
+      <button id='clear-board' onClick={resetBoard}>Limpar Quadro</button>
       <div
-        className="board"
+        id='pixel-board'
         style={{
           display: 'grid',
           gridTemplateColumns: `repeat(${boardSize}, 40px)`,
@@ -63,7 +67,7 @@ const Board = ({ selectedColor }: { selectedColor: string }) => {
           />
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

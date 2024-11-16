@@ -11,11 +11,11 @@ function App() {
       setSelectedColor(color);  // Atualiza a cor selecionada
     };
   return (
-    <>
+    <main>
       <Header />
       <ColorPalette onColorSelect={handleColorSelect} />
       <Board selectedColor={selectedColor} />
-    </>
+    </main>
 
   );
 }
