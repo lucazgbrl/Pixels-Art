@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Pixels-Art/static/css/main.b99998c7.css",
+    "main.js": "/Pixels-Art/static/js/main.5204ecca.js",
+    "static/js/453.1701f815.chunk.js": "/Pixels-Art/static/js/453.1701f815.chunk.js",
+    "static/media/8bit landscape.jpg": "/Pixels-Art/static/media/8bit landscape.4762ca8c44c530941742.jpg",
+    "index.html": "/Pixels-Art/index.html",
+    "main.b99998c7.css.map": "/Pixels-Art/static/css/main.b99998c7.css.map",
+    "main.5204ecca.js.map": "/Pixels-Art/static/js/main.5204ecca.js.map",
+    "453.1701f815.chunk.js.map": "/Pixels-Art/static/js/453.1701f815.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b99998c7.css",
+    "static/js/main.5204ecca.js"
+  ]
+}
